@@ -4,6 +4,7 @@ public class PrintFormatacaoNumeros {
         float taxa = 0.2456f;
         float valor = 7654.321f;
         Locale.setDefault(Locale.US);
-        System.out.printf("Valor: R$ %,3.2f%nTaxa: %.2f%%", valor, taxa);
+        System.out.printf("Valor: R$ %,3.2f\n", valor);
+        System.out.printf("Taxa: %.2f%%\n", taxa);
     }
 }
