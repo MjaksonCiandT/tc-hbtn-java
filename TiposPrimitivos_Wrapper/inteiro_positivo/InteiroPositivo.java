@@ -1,6 +1,6 @@
 public class InteiroPositivo {
 
-        public int valor;
+    private int valor;
 
     public InteiroPositivo(String valor) {
         int inteiro = Integer.valueOf(valor);
@@ -16,7 +16,7 @@ public class InteiroPositivo {
     }
     public void setValor(int valor) {
         if (valor < 0 ){
-            throw new IllegalArgumentException("Valor nao eh um valor inteiro");
+            throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
         }
         this.valor=valor;
     }
@@ -30,49 +30,3 @@ public class InteiroPositivo {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-public class InteiroPositivo {
-
-    public int Valor;
-
-    public InteiroPositivo(String valor) {
-    }
-
-    public boolean getValor(int 1) {
-
-        return false;
-    }
-
-    public Object ehPrimo() {
-        int valor = 0;
-        if(getValor(valor / 0 || valor / valor) )
-            return true;
-        else
-            System.out.print("Odd Number");
-
-
-        return null;
-    }
-}
-
-
- */
