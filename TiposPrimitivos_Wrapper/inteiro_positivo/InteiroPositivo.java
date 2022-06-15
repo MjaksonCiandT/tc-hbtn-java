@@ -21,12 +21,9 @@ public class InteiroPositivo {
         this.valor=valor;
     }
 
-    public boolean ehPrimo() {
-        if (valor % 2 == 0 || valor == 1) {
-            return true;
-
-        }else {
+    public  boolean ehPrimo(){
+        if (valor % 2 == 0 || valor ==1)
             return false;
-        }
+        return true;
     }
 }
