@@ -19,12 +19,20 @@ public class PersonagemGame {
     }
 
     public int receberCura(int quantidadeDeCura) {
+
         int saudeMaximaDoPersonagem = 100;
-        if ((saudeAtual + quantidadeDeCura) > saudeMaximaDoPersonagem) {
+
+        if (saudeAtual + quantidadeDeCura < saudeMaximaDoPersonagem) {
+
+            this.saudeAtual=saudeAtual + quantidadeDeCura;
+
+        }if (saudeAtual + quantidadeDeCura > saudeMaximaDoPersonagem) {
 
             return this.saudeAtual=saudeMaximaDoPersonagem;
 
-        } else {return saudeAtual;}
+        } else {
+            return saudeAtual;
+        }
 
     }
 
@@ -39,6 +47,8 @@ public class PersonagemGame {
 
             return this.saudeAtual= saudeMínimaDoPersonagem;
 
-        }else {return saudeAtual;}
+        }else {
+            return saudeAtual;
+        }
     }
 }
