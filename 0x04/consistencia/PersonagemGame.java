@@ -4,16 +4,16 @@ public class PersonagemGame {
     private String status;
 
     public PersonagemGame(int valorSaudeInicial, String nomeInicial) {
-        this.setSaudeAtual();
+        this.setSaudeAtual(valorSaudeInicial);
     }
 
     public int getSaudeAtual() {
-        int valorsaudeInicial = 50;
         return this.saudeAtual;
     }
 
-    public void setSaudeAtual() {
+    public int setSaudeAtual(int saudeAtual) {
         this.saudeAtual=50;
+        return saudeAtual;
     }
 
     public String getNome() {
