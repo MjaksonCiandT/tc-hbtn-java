@@ -32,6 +32,6 @@ public class Empregado {
     }
 
     public void apresentar() {
-        System.out.println("Codigo: " + this.getCodigo() +"\n"+ "Nome: " + this.getNome() +"\n"+ "Bairro: " + endereco.getBairro() +"\n"+ "Cidade: "  + endereco.getCidade() +"\n"+ "Pais: " + endereco.getPais());
+        System.out.println("Codigo: " + this.getCodigo() + "\nNome: " + this.getNome() + "\nBairro: " + endereco.getBairro() + "\nCidade: "  + endereco.getCidade() + "\nPais: " + endereco.getPais());
     }
 }
