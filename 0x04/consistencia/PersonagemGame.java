@@ -4,7 +4,6 @@ public class PersonagemGame {
     private String status;
 
     public PersonagemGame(int valorSaudeInicial, String nomeInicial) {
-        this.saudeAtual=50;
         this.setSaudeAtual();
     }
 
