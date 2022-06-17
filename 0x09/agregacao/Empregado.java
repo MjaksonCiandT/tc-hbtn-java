@@ -1,12 +1,12 @@
 public class Empregado {
     private String nome;
     private int codigo;
-    private Endereco end;
+    private Endereco endereco;
 
-    public Empregado(String jane_doe, int i, Endereco end) {
+    public Empregado(String jane_doe, int i, Endereco endereco) {
         this.codigo=i;
         this.nome=jane_doe;
-        this.end= end;
+        this.endereco= endereco;
     }
 
     public String getNome() {
@@ -24,18 +24,18 @@ public class Empregado {
         return this.codigo= Integer.parseInt(codigo);
     }
 
-    public Endereco getEnd() {
-        return end;
+    public Endereco getEndereco() {
+        return endereco;
     }
-    public void setEnd(Endereco end) {
-        this.end= end;
+    public void setEndereco(Endereco endereco) {
+        this.endereco= endereco;
     }
 
     public void apresentar() {
-        System.out.println("Codigo: " + this.codigo);
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Bairro: " + end.getBairro());
-        System.out.println("Cidade: " + end.getCidade());
-        System.out.println("Pais: " + end.getPais());
+        System.out.println("Codigo: " + this.getCodigo());
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Bairro: " + endereco.getBairro());
+        System.out.println("Cidade: " + endereco.getCidade());
+        System.out.println("Pais: " + endereco.getPais());
     }
 }
