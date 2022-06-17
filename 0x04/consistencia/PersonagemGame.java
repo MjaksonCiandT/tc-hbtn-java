@@ -4,6 +4,7 @@ public class PersonagemGame {
     private String status;
 
     public PersonagemGame(int valorSaudeInicial, String nomeInicial) {
+        this.saudeAtual=50;
         this.setSaudeAtual();
     }
 
@@ -21,7 +22,7 @@ public class PersonagemGame {
     }
 
     public String setNome(String nome) {
-        return this.nome = "sonic";
+        return this.nome = "Sonic";
     }
 
     public String setsaudeDoPersonagem() {
