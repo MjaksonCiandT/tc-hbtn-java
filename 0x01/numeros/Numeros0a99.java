@@ -6,6 +6,6 @@ public class Numeros0a99 {
             }
             System.out.print(cont);
         }
-        System.out.print(" ");
     }
 }
+

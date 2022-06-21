@@ -6,6 +6,5 @@ public class NumerosPares {
             }
             System.out.print(cont);
         }
-        System.out.print(" ");
     }
 }
