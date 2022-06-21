@@ -4,7 +4,7 @@ public class Numeros0a99 {
             if (cont < 99){
                 System.out.print(cont + ", ");
             } else {
-                System.out.print(cont);
+                System.out.print(cont + "\n");
             }
         }
     }
