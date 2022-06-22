@@ -6,10 +6,10 @@ public class Numero {
             divisao = a / b;
         }
         catch (ArithmeticException e) {
-            System.out.println("\n"+"Nao eh possivel dividir por zero ");
+            System.out.println("Nao eh possivel dividir por zero");
         }
         finally {
-            System.out.printf("%d / %d = %d", a, b, divisao);
+            System.out.print("%d / %d = %d \n", a, b, divisao);
         }
         return divisao;
     }
