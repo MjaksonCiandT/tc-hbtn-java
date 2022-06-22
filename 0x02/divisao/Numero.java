@@ -9,7 +9,7 @@ public class Numero {
             System.out.println("Nao eh possivel dividir por zero");
         }
         finally {
-            System.out.println(a + "+" + b +"="+ divisao);
+            System.out.println(a + " / " + b +" = "+ divisao);
         }
         return divisao;
     }
