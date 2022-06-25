@@ -7,7 +7,7 @@ public class Empregado {
 
     public double calcularBonus(Departamento departamento){
         double valorBonus = 0;
-        if (departamento.alcancouMeta() == true){
+        if (departamento.alcancouMeta(departamento.getValorMeta(), departamento.getValorAtingidoMeta()) == true){
             return valorBonus = (salarioFixo * 0.1);
         }else {
             return valorBonus;
@@ -15,12 +15,17 @@ public class Empregado {
     }
 
     double calcularSalarioTotal(Departamento departamento){
-        double valorsalarioTotal = 0;
-        if (departamento.alcancouMeta() == true){
-            return valorsalarioTotal = ((salarioFixo * 0.1) + salarioFixo);
-        }else {
-            return salarioFixo;
+        double bonus = 0.10;
+        double salarioFixo = getSalarioFixo();
+        double meta = departamento.getValorMeta();
+        double valorFinal;
+
+        if(departamento.alcancouMeta(meta, salarioFixo)) {
+            valorFinal = calcularBonus(departamento) + salarioFixo;
+        } else {
+            valorFinal = 0 + salarioFixo;
         }
+        return valorFinal;
     }
 
     public double getSalarioFixo() {
