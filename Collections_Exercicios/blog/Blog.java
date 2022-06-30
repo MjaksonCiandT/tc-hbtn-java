@@ -10,9 +10,9 @@ public class Blog {
     public  Set<String> obterTodosAutores() {
         Set<String> autor = new TreeSet<>();
 
-        //for (Post post : postagens) {
-        //    autor.add(post.getAutor());
-        //}
+        for (Post post : postagens) {
+            autor.add(post.getAutor());
+        }
         return autor;
     }
 
