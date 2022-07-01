@@ -13,12 +13,12 @@ public class Program {
                 "Como implementar Terraform",
                 "Implementando IaC com Terraform bla bla bla",
                 Categorias.DEVOPS);
-/*
+
         Post post2 = new Post(autor1,
                 "Trabalhando com a interface Set em Java",
                 "A interface Set eh implementada por varias colecoes em Java bla bla bla",
                 Categorias.DESENVOLVIMENTO);
-*/
+
         Post post3 = new Post(autor2,
                 "Publicando pipelines GitLab",
                 "Para publicar pipelines no GitLab bla bla bla",
