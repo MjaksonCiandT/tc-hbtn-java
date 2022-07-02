@@ -1,4 +1,4 @@
 
 public enum TipoNumero {
-       // CELULAR,COMERCIAL,CASA
+    CELULAR,COMERCIAL,CASA
 }
