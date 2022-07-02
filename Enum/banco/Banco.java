@@ -67,7 +67,7 @@ public class Banco {
 
             if (imprimirTransacoes) {
                 for (int j = 0; j < clienteEncontrado.getTransacoes().size(); j++) {
-                    System.out.println("  [" - (j + 1) + "] valor " + clienteEncontrado.getTransacoes().get(j));
+                    System.out.println("  [" + (j + 1) + "] valor " + clienteEncontrado.getTransacoes().get(j));
                 }
             }
 
