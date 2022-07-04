@@ -1,3 +1,3 @@
 public enum FormatoVideo {
-    MPEG, AVI, WMV, MP4
+    MPEG, AVI, WMV, MP4, MKV
 }
