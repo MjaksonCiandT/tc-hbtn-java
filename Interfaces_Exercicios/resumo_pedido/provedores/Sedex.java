@@ -6,7 +6,7 @@ public class Sedex  implements ProvedorFrete{
         double resultado = 0 ;
 
         if(peso > 1000){
-            resultado =valor * 1.10;
+            resultado =valor * 0.10;
         }else {
             resultado = valor*0.05;
         }

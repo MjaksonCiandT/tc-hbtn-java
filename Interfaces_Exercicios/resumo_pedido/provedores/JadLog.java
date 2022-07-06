@@ -7,9 +7,9 @@ public class JadLog implements  ProvedorFrete {
         double resultado = 0 ;
 
         if(peso > 2000){
-            resultado =valor * 0.070 ;
+            resultado =valor * 0.07 ;
         }else {
-            resultado =valor*0.0455;
+            resultado =valor*0.045;
         }
         return new Frete(resultado,obterTipoProvedorFrete());
     }

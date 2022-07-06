@@ -6,9 +6,9 @@ public class Loggi implements ProvedorFrete{
         double resultado = 0 ;
 
         if(peso > 5000){
-            resultado =valor * 0.120;
+            resultado =valor * 0.12;
         }else {
-            resultado = valor*0.040;
+            resultado = valor*0.04;
         }
         return new Frete(resultado,obterTipoProvedorFrete());
     }
