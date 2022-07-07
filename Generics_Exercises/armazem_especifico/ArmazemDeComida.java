@@ -1,2 +1,2 @@
-public class ArmazemDeComida extends Armazem {
+public class ArmazemDeComida extends Armazem<Comida> {
 }
