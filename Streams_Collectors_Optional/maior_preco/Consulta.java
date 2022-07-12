@@ -8,7 +8,7 @@ public class Consulta {
     public static List<Produto> obterLivrosDoPedido(Pedido lista){
         List<Produto> produtosPedidos =  new ArrayList<>(lista.getProdutos());
 
-        return this.lista.getProdutos().stream().filter(p-> p.getCategoria().equals(CategoriaProduto.LIVRO))
+        return lista.getProdutos().stream().filter(p-> p.getCategoria().equals(CategoriaProduto.LIVRO))
                 .collect(Collectors.toList());
     }
 
