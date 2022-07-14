@@ -23,7 +23,6 @@ public class ConsultaPessoas {
     }
 
     public static Map<String, TreeSet<String>> obterHobbiesPorCargo(List<Pessoa> pessoa1) {
-        return pessoa1.stream()
-                //.collect(Collectors.groupingBy(Pessoa::getCargo, Collectors.flatMapping(p -> p.getHobbies().stream(),Collectors.toCollection(TreeSet::new))));
+        return pessoa1.stream().collect(Collectors.groupingBy(Pessoa::getCargo, Collectors.flatMapping(p -> p.getHobbies().stream(),Collectors.toCollection(TreeSet::new))));
     }
 }
