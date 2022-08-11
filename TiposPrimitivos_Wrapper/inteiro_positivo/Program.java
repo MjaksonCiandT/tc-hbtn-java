@@ -11,7 +11,6 @@ public class Program{
 
         InteiroPositivo inteiroPositivo1 = null;
 
-
         try {
             inteiroPositivo1 = new InteiroPositivo("43");
             System.out.println(inteiroPositivo1.getValor() + " - " + inteiroPositivo1.ehPrimo());
