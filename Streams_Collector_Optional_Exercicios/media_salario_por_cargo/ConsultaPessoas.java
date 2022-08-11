@@ -11,12 +11,10 @@ public class ConsultaPessoas {
 
     public static Map<String, Long> obterContagemPessoasPorCargo(List<Pessoa> pessoa1) {
         return pessoa1.stream().collect(Collectors.groupingBy(Pessoa::getCargo, Collectors.counting()));
-
     }
 
     public static Map<String, Map<Integer, Long>> obterContagemPessoasPorCargoEIdade(List<Pessoa> pessoa1) {
         return pessoa1.stream().collect(Collectors.groupingBy(Pessoa::getCargo, Collectors.groupingBy(Pessoa::getIdade,  Collectors.counting())));
-
     }
     public static Map<String, Double> obterMediaSalarioPorCargo(List<Pessoa> pessoa1) {
         return pessoa1.stream().collect(Collectors.groupingBy(Pessoa::getCargo , Collectors.averagingDouble(Pessoa::getSalario)));
