@@ -44,7 +44,6 @@ public class Agencia {
             if (nome.getNome().equals(nomeCliente)){
                 return nome ;
             }
-
         }
         return null;
     }
