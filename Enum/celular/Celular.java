@@ -53,6 +53,4 @@ public class Celular {
             System.out.println(lista.getNome()+" -> "+ lista.getNumero() +" ("+lista.getTipo()+")");
         }
     }
-
-
 }
